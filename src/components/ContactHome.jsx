@@ -7,6 +7,9 @@ export const ContactHome = () => {
     const [showModal, setShowModal] = useState(false);
     const navigate = useNavigate();
 
+
+
+    
     return (
         <div className="mt-5">
             <div className="w-75 mx-auto">
@@ -31,30 +34,30 @@ export const ContactHome = () => {
                         <div className="col-md-9">
                             <div className="card-body py-5 px-4">
                                 <div className="d-flex justify-content-between align-items-center mb-3">
-                                    <h5 className="card-title m-0">Full Name</h5>
+                                    <h3 className="card-title m-0">Full Name</h3>
                                     <div className="d-flex gap-3">
-                                        <FontAwesomeIcon icon={faPen} className="text-dark" style={{ cursor: 'pointer' }}
+                                       <h5><FontAwesomeIcon icon={faPen} className="text-dark" style={{ cursor: 'pointer' }}
                                             onClick={() => navigate('edit-contact')}
-                                        />
-                                        <FontAwesomeIcon icon={faTrash} className="text-dark" style={{ cursor: 'pointer' }}
+                                        /></h5>
+                                       <h5><FontAwesomeIcon icon={faTrash} className="text-dark" style={{ cursor: 'pointer' }}
                                             onClick={() => setShowModal(true)}
-                                        />
+                                        /></h5>
                                     </div>
                                 </div>
 
                                 <p className="card-text mb-2 small">
-                                    <FontAwesomeIcon icon={faLocationDot} className="me-2 text-dark" />
-                                    Location text here
+                                   <h5> <FontAwesomeIcon icon={faLocationDot} className="me-2 text-dark" />
+                                    Location text here</h5>
                                 </p>
 
                                 <p className="card-text mb-2 small">
-                                    <FontAwesomeIcon icon={faPhoneFlip} className="me-2 text-dark" />
-                                    Phone Number
+                                   <h5> <FontAwesomeIcon icon={faPhoneFlip} className="me-2 text-dark" />
+                                    Phone Number</h5>
                                 </p>
 
                                 <p className="card-text mb-2 small">
-                                    <FontAwesomeIcon icon={faEnvelope} className="me-2 text-dark" />
-                                    Email Address
+                                   <h5> <FontAwesomeIcon icon={faEnvelope} className="me-2 text-dark" />
+                                    Email Address</h5>
                                 </p>
                             </div>
                         </div>
