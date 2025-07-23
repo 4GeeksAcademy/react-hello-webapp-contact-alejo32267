@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ContactDetails } from './components/ContactDetails';
-import { ContactHome } from './components/ContactHome'; // ejemplo
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ContactHome } from "./components/ContactHome";
+import { ContactDetails } from "./components/ContactDetails";
+import { EditContact } from "./components/EditContact";
 
 function App() {
   return (
@@ -8,8 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ContactHome />} />
         <Route path="/contact-details" element={<ContactDetails />} />
-        <Route path="/edit-contact" element={<EditContact />} />
-
+        <Route path="/edit-contact/:id" element={<EditContact />} />
       </Routes>
     </BrowserRouter>
   );
